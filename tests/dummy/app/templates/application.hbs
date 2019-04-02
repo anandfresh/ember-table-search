@@ -1,0 +1,58 @@
+<div class="col-md-4 col-md-offset-4">
+  <h1>ember-table-search</h1>
+
+  {{#bs-form as |form|}}
+    {{form.element
+      id="query"
+      value=query
+      label="Text Search"
+      onChange=(action (mut query))
+    }}
+
+    <div class="form-group">
+      <label for="searchable-properties">Search by</label>
+      {{#power-select-multiple
+        selected=selectedProperties
+        options=availableProperties
+        onchange=(action (mut selectedProperties))
+        as |option|
+      }}
+        {{option.displayName}}
+      {{/power-select-multiple}}
+    </div>
+
+  
+  {{/bs-form}}
+
+  <hr>
+
+  <div id="results">
+    {{#with
+      (search query model properties=properties caseSensitive=caseSensitive exactMatch=exactMatch)
+      as |results|
+    }}
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr style="background-color:#e4e4e4">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each results as |result|}}
+            <tr data-test-row-id="{{result.firstName}}-{{result.lastName}}">
+              <td>{{result.firstName}}</td>
+              <td>{{result.lastName}}</td>
+              <td>{{result.country}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{else}}
+      <p>No results found.</p>
+    {{/with}}
+  </div>
+
+
+</div>
