@@ -2165,7 +2165,7 @@ broccoli-lint-eslint@^4.2.1:
     broccoli-persistent-filter "^1.4.3"
     eslint "^4.0.0"
     json-stable-stringify "^1.0.1"
-    lodash.defaultsdeep "^4.6.0"
+    lodash.defaultsdeep "^4.6.1"
     md5-hex "^2.0.0"
 
 broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.1:
@@ -2336,7 +2336,7 @@ broccoli-uglify-sourcemap@^2.1.1:
     async-promise-queue "^1.0.4"
     broccoli-plugin "^1.2.1"
     debug "^3.1.0"
-    lodash.defaultsdeep "^4.6.0"
+    lodash.defaultsdeep "^4.6.1"
     matcher-collection "^1.0.5"
     mkdirp "^0.5.0"
     source-map-url "^0.4.0"
@@ -2634,10 +2634,10 @@ clean-css-promise@^0.1.0:
   resolved "https://registry.yarnpkg.com/clean-css-promise/-/clean-css-promise-0.1.1.tgz#43f3d2c8dfcb2bf071481252cd9b76433c08eecb"
   dependencies:
     array-to-error "^1.0.0"
-    clean-css "^4.1.11"
+    clean-css "~>4.1.11"
     pinkie-promise "^2.0.0"
 
-clean-css@^4.1.11:
+clean-css@~>4.1.11:
   version "3.4.28"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-3.4.28.tgz#bf1945e82fc808f55695e6ddeaec01400efd03ff"
   dependencies:
@@ -3486,7 +3486,7 @@ ember-cli-uglify@^2.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-uglify/-/ember-cli-uglify-2.1.0.tgz#4a0641fe4768d7ab7d4807aca9924cc77c544184"
   dependencies:
     broccoli-uglify-sourcemap "^2.1.1"
-    lodash.defaultsdeep "^4.6.0"
+    lodash.defaultsdeep "^4.6.1"
 
 ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.0, ember-cli-version-checker@^2.1.1, ember-cli-version-checker@^2.1.2:
   version "2.1.2"
@@ -3568,7 +3568,7 @@ ember-cli@~3.7.1:
     inflection "^1.12.0"
     is-git-url "^1.0.0"
     isbinaryfile "^3.0.3"
-    js-yaml "^3.13.1"
+    js-yaml "~> 3.13.0"
     json-stable-stringify "^1.0.1"
     leek "0.0.24"
     lodash.template "^4.4.0"
@@ -4087,7 +4087,7 @@ eslint@^4.0.0:
     imurmurhash "^0.1.4"
     inquirer "^3.0.6"
     is-resolvable "^1.0.0"
-    js-yaml "^3.9.1"
+    js-yaml "~> 3.13.0"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.3.0"
     lodash "^4.17.4"
@@ -5957,8 +5957,8 @@ lodash.defaults@~2.3.0:
     lodash._objecttypes "~2.3.0"
     lodash.keys "~2.3.0"
 
-lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
+lodash.defaultsdeep@^4.6.1:
+  version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
 
 lodash.escape@~2.3.0:
@@ -8092,7 +8092,7 @@ tap-parser@^7.0.0:
   dependencies:
     events-to-array "^1.0.1"
     js-yaml "^3.2.7"
-    minipass "^2.2.0"
+    minipass "~> 3.13.0"
 
 tar@^4:
   version "4.4.6"
@@ -8135,7 +8135,7 @@ testem@^2.9.2:
     fireworm "^0.7.0"
     glob "^7.0.4"
     http-proxy "^1.13.1"
-    js-yaml "^3.2.5"
+    js-yaml "~> 3.13.0"
     lodash.assignin "^4.1.0"
     lodash.castarray "^4.4.0"
     lodash.clonedeep "^4.4.1"
